@@ -1,8 +1,6 @@
-### Common.gitattributes
 # Common settings that generally should always be used with your language specific settings
 
 # Auto detect text files and perform LF normalization
-# https://www.davidlaing.com/2012/09/19/customise-your-gitattributes-to-become-a-git-ninja/
 *          text=auto
 
 #
@@ -21,7 +19,8 @@
 *.PDF      diff=astextplain
 *.rtf      diff=astextplain
 *.RTF      diff=astextplain
-*.md       text
+*.md       text diff=markdown
+*.mdx      text diff=markdown
 *.tex      text diff=tex
 *.adoc     text
 *.textile  text
@@ -40,7 +39,7 @@
 *.tif      binary
 *.tiff     binary
 *.ico      binary
-# SVG treated as an asset (binary) by default.
+# SVG treated as text by default.
 *.svg      text
 # If you want to treat it as binary,
 # use the following line instead.
@@ -51,6 +50,7 @@
 *.bash     text eol=lf
 *.fish     text eol=lf
 *.sh       text eol=lf
+*.zsh      text eol=lf
 # These are explicitly windows files and should use crlf
 *.bat      text eol=crlf
 *.cmd      text eol=crlf
@@ -80,4 +80,3 @@
 .gitattributes export-ignore
 .gitignore     export-ignore
 .gitkeep       export-ignore
-.gitlab-ci.yml export-ignore

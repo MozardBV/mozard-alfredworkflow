@@ -1,0 +1,13 @@
+pages:
+  stage: deploy
+  image: debian:11
+  services:
+    - docker:dind
+  script:
+    - mkdir public
+    - cp dist/Mozard.alfredworkflow public/Mozard.alfredworkflow
+  artifacts:
+    paths:
+      - public
+  only:
+    - main
