@@ -5,7 +5,10 @@ Mozard workflow voor Alfred 4.
 - [Meld een bevinding](https://intranet.mozard.nl/mozard/!suite09.scherm1089?mWfr=367)
 - [Verzoek nieuwe functionaliteit](https://intranet.mozard.nl/mozard/!suite09.scherm1089?mWfr=604&mDdv=990842)
 
+## Inhoudsopgave
+
 - [@mozardbv/mozard-alfredworkflow](#mozardbvmozard-alfredworkflow)
+  - [Inhoudsopgave](#inhoudsopgave)
   - [Over dit project](#over-dit-project)
     - [Gebouwd met](#gebouwd-met)
   - [Aan de slag](#aan-de-slag)
