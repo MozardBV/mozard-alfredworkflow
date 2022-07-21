@@ -1,6 +1,6 @@
 # @mozardbv/mozard-alfredworkflow
 
-Mozard workflow voor Alfred 4.
+Mozard workflow voor Alfred 5.
 
 - [Meld een bevinding](https://intranet.mozard.nl/mozard/!suite09.scherm1089?mWfr=367)
 - [Verzoek nieuwe functionaliteit](https://intranet.mozard.nl/mozard/!suite09.scherm1089?mWfr=604&mDdv=990842)
@@ -33,7 +33,7 @@ Dit is een persoonlijk hobbyproject en valt niet onder de servicenormen of veran
 
 ### Afhankelijkheden
 
-- Alfred >= 4.0.0
+- Alfred >= 5.0.0
 
 ### Installatie
 
