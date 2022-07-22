@@ -1,17 +1,14 @@
 ---
-include:
-  - template: Auto-DevOps.gitlab-ci.yml
-
-pages:
+release_artifacts:
   stage: deploy
   image: debian:11
   services:
     - docker:dind
+  before_script:
+    - apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
   script:
-    - mkdir public
-    - cp dist/Mozard.alfredworkflow public/Mozard.alfredworkflow
-  artifacts:
-    paths:
-      - public
-  only:
-    - main
+    - cd dist
+    - 'curl --header "JOB-TOKEN: $CI_JOB_TOKEN" --upload-file dist/Mozard.alfredworkflow ${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/generic/mozard-alfredworkflow/${CI_COMMIT_TAG}/Mozard.alfredworkflow'
+  rules:
+    - if: $CI_COMMIT_TAG
+  when: manual
